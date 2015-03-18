@@ -3,23 +3,12 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         //------------------------------------------------------------
-        less: { // Task less
+        less: { 
             options: {
-                expand: true
+                expand: true,
+                sourceMap: true
             },
-            dev: { // Target
-                options: {
-                    strictMath: true
-                },
-                files: {
-                    'css/all.css': ['less/all.less']
-                }
-            },
-            release: { // Target
-                options: {
-                    strictMath: true,
-                    yuicompress: true
-                },
+            dev: {
                 files: {
                     'css/all.css': ['less/all.less']
                 }
@@ -27,23 +16,22 @@ module.exports = function(grunt) {
         },
         watch: {
             less: {
-                files: 'less/**',
-                tasks: ['less:dev'],
-                options: {
-                    interrupt: true
+                files: ['less/**/*.less'],
+                tasks: ['less']
+            }
+        },
+        browserSync: {
+            files: {
+                src: ['*.html', 'css/all.css']
+            },
+            options: {
+                watchTask: true,
+                server: {
+                    baseDir: '.'
                 }
-            },
-            css: {
-                files: ['*.css']
-            },
-            livereload: {
-                options: { livereload: true },
-                files: ['css/*.css']
             }
         }
-        //------------------------------------------------------------
     });
-    // Инициализация плагинов, таски которых мы вызываем
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    require('load-grunt-tasks')(grunt);
+    grunt.registerTask('default', ['less', 'browserSync', 'watch']);
 };

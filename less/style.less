@@ -8,6 +8,14 @@
     }
     *zoom: 1;
 }
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1108px;
+    padding: 0 78px;
+    margin: 0 auto;
+}
 html, body {
     height: 100%;
     width: 100%;
@@ -26,84 +34,80 @@ a {
 body{
     background: url("../images/bg.png") repeat;
 }
-header{
+.header{
     background: #000;
-    height: 35px;
-    width: 100%;
-}
-.header_i{
-    width: 68%;
-    margin: 0 auto;
-    .clearfix;
-}
-.header__list{
-    &-left{
-        float: left;
-        height: 35px;
-        vertical-align: middle;
+    &__i{
+        &:extend(.container);
+        .clearfix;
     }
-    &-right{
-        float: right;
-        height: 35px;
-        vertical-align: middle;
+    &__link,
+    &__join-link{
+        display: inline-block;
+        font: (12/16em) timesbold;
+        padding: 12px 0 11px;
     }
-    &-item{
-        &_left{
-            display: inline-block;
-            margin-right: 8px;
+    &__link{
+        color: #fff;
+        text-transform: uppercase;
+        padding-left: 40px;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 33px;
+            height: 24px;
+            background: url(../images/header_earth.png) no-repeat;
         }
-        &_right{
-            display: inline-block;
+    }
+    &__join-link{
+        color: #e71c25;
+        margin: 0 0 0 8px;
+    }
+    &-nav{
+        float: right;
+        &__item{
             margin-left: 23px;
         }
-//        &_text{
-//            font-size: 0.75em;
-//        }
-        &_join{
-//            font-family: helvetica;
-            &-link{
-                color: #e71c25;
-            }
+        &__item,
+        &__link {
+            display: inline-block;
         }
-        &_chat{
-            vertical-align: middle;
-            img{
-                display: inline-block;
-            }
-            p{
-                display: inline-block;
-                padding-left: 8px;
-            }
-        }
-        &_lang{
-            vertical-align: middle;
-            img{
-                display: inline-block;
-            }
-            p{
-                display: inline-block;
-                padding-left: 5px;
-            }
-        }
-        &_link{
+        &__link{
             color: #fff;
             text-transform: uppercase;
-            font-family: timesbold;
-            font-size: 0.6875em;
-            display: inline-block;
+            font: (11/16em) timesbold;
+            padding: 12px 0;
+            position: relative;
+            &_icon {
+                padding-left: 25px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            &_chat:before{
+                background: url(../images/chat.png) no-repeat;
+                width: 19px;
+                height: 18px;
+                top: 7px;
+            }
+            &_flag{
+                font-family: helveticaregular;
+            }
+            &_flag:before{
+                background: url(../images/flag.png) no-repeat;
+                width: 16px;
+                height: 11px;
+            }
         }
     }
 }
 .page{
-    width: 79.43%;
-    margin: 0 auto;
     background: #fff;
-    &_i{
-        width: 85.6%;
-//        height: 133px;
-        margin: 0 auto;
-        background: #fff;
-    }
+    &:extend(.container);
     &__header{
         text-align: center;
         position: relative;
@@ -157,36 +161,32 @@ header{
             bottom: 12px;
             &_input{
                 width: 100%;
-                height: 14px;
-                padding: 8px 0 8px 7px;
-                font-size: 0.75em;
+//                height: 14px;
+                padding: 8px 8px;
+                font: 0.75em helveticaregular;
 //                color: #000;
                 border: 1px solid #ccc;
             }
             img{
                 position: absolute;
-                right: 0;
+                right: 8px;
                 top: 50%;
                 transform: translateY(-50%);
             }
         }
     }
     &__nav{
-//        width: 100%;
-        padding: 12px 2.52%;
+        padding: 7px 0;
         border-top: 3px solid #000;
         border-bottom: 3px solid #000;
         .clearfix;
         &-item{
-//            width: 100-;
-            font-size: 0.9375em;
+            font-size: (15/16em);
             color: #000;
             text-transform: uppercase;
-            padding-right: 6.3%;
             float: left;
-            &:last-child{
-                padding-right: 0;
-            }
+            width: (100/8%);
+            text-align: center;
         }
     }
     &__bread-crumbs{
@@ -195,7 +195,7 @@ header{
         .clearfix;
         &-item{
             float: left;
-            font-size: 0.6875em;
+//            font: 0.6875em helveticaregular;
             &_slash{
                 padding: 0 1.05%;
             }
@@ -203,6 +203,7 @@ header{
         &-link{
             text-transform: uppercase;
             color: #767676;
+            font: 0.6875em helveticaregular;
             &_active{
                 color: #d8492c;
             }
@@ -258,7 +259,8 @@ header{
             }
             &_text{
                 color: #000;
-                font-size: 0.9375em;
+                font: 0.9375em helveticaregular;
+                font-weight: bold;
                 padding: 26px 0;
             }
             &_quote{
@@ -266,7 +268,7 @@ header{
                 width: 61.58%;
                 margin: 0 auto;
                 &-sign{
-                    font-size: 1.875em;
+                    font-size: (30/16em);
                 }
                 &-text{
                    font-size: 1.0625em;
@@ -274,7 +276,8 @@ header{
                 }
             }
             &_author{
-                font-size: 0.8125em;
+                font: 0.8125em helveticaregular;
+                font-weight: bold;
                 color: #000;
             }
             &_img{
@@ -319,14 +322,26 @@ header{
             }
             &_text{
                 color: #000;
-                font-size: 0.9375em;
+                font: 0.9375em helveticaregular;
+                font-weight: bold;
                 padding: 30px 0 26px;
                 &-little{
                     padding: 26px 0;
                 }
             }
+            &_money{
+                color: #e71c25;
+                font-size: (48.56/16em);
+                .money-num{
+                    padding: 10px 15px;
+                    border: 1px solid #4f4e4d;
+                }
+                .money-pt{
+                    padding: 0 15px;
+                }
+            }
             &_img{
-                padding: 24px 0 48px;
+                padding: 0 0 48px;
                 margin: 0 auto;
                 width: 13.77%;
                 height: auto;
@@ -367,8 +382,8 @@ header{
             }
             &_text{
                 color: #000;
-                font-size: 0.9375em;
-//                padding: 28px 0 28px;
+                font: 0.9375em helveticaregular;
+                font-weight: bold;
                 span{
                     color: #ef2c1e;
                 }
@@ -418,13 +433,19 @@ header{
     &__footer{
         border-top: 6px solid #000;
         width: 100%;
+        .clearfix;
         &-list{
             .clearfix;
+            width: (100-9.87-2.52%);
+            float: left;
+            margin: 32px 0;
+            &_connect{
+                padding: 0 0 0 20px;
+            }
         }
         &-item{
             float: left;
             margin-left: 2.52%;
-            margin-top: 32px;
             ul li{
                 font-size: 0.625em;
                 color: #000;
@@ -439,11 +460,88 @@ header{
                     padding: 0 0 26px 0;
                 }
             }
+            &_connect{
+                margin: 0;
+                li{
+                    padding: 0 0 10px 0;
+                    &:first-child{
+                        font-size: 0.6875em;
+                        padding: 0 0 20px 0;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+//                    &:last-child{
+//                        padding: 0 0 26px 0;
+//                    }
+                }
+                &-link{
+                    font-size: 0.625em;
+                    color: #000;
+                }
+            }
+            &_about{
+
+            }
+            &:last-child{
+                border-left: 2px solid #000;
+            }
         }
         &-logo{
             width: 9.87%;
             height: auto;
             margin-top: 34px;
         }
+        &_signup{
+            position: absolute;
+            bottom: 0;
+            p{
+                font-size: (11/16em);
+                text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+            input{
+                width: 100%;
+                padding: 8px 8px;
+                font-size: (11/16em);
+                border: 1px solid #ccc;
+                input:after{
+                    background: url(../images/signup.png) no-repeat;
+                    width: 25px;
+                    height: 25px;
+                    //                        top: 7px;
+                }
+            }
+            input:after{
+                background: url(../images/signup.png) no-repeat;
+                width: 25px;
+                height: 25px;
+                //                        top: 7px;
+            }
+        }
     }
+    &__nav-bottom{
+        padding: 8px 0;
+        background: #000;
+        .clearfix;
+        &-item{
+            float: left;
+            text-align: center;
+            padding-right: (38/951*100%);
+            &:first-child{
+                padding-left: (16/951*100%);;
+            }
+            &:last-child{
+                padding-right: (16/951*100%);
+            }
+        }
+        &-link{
+            font-size: (12/16em);
+            color: #fff;
+        }
+    }
+}
+@media only screen and (max-width: 1120px){
+.page__nav-bottom-link{
+//    font-size: 0.7em;
+}
 }
