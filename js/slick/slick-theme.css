@@ -98,13 +98,13 @@
     .slick-prev,
     .slick-next
     {
-        width: 27px;
-        height: 27px;
+        width: 30px;
+        height: 30px;
     }
     .slick-prev
     {
         left: -45px;
-        background-size: 27px;
+        background-size: 30px;
     }
     [dir='rtl'] .slick-prev
     {
@@ -115,7 +115,7 @@
     .slick-next
     {
         right: -45px;
-        background-size: 27px;
+        background-size: 30px;
     }
     [dir='rtl'] .slick-next
     {
@@ -123,7 +123,7 @@
         left: -45px;
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     .slick-prev,
     .slick-next
     {
