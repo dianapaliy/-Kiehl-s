@@ -734,8 +734,8 @@ body {
 .page__content-about_lent-title {
   width: 258px;
   height: 32px;
-  padding: 6px 0;
-  margin: 5px auto;
+  padding: 3px 0;
+  margin: 8px auto;
   font-size: 1.4em;
   font-family: PT Sans Bold;
   border-top: 1px solid #fff;
@@ -804,8 +804,8 @@ body {
 .page__content-mission_lent-title {
   width: 335px;
   height: 32px;
-  padding: 6px 0;
-  margin: 5px auto;
+  padding: 3px 0;
+  margin: 8px auto;
   font-size: 1.4em;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -904,9 +904,9 @@ body {
 }
 .page__content-events_lent-title {
   width: 318px;
-  height: 32px;
-  padding: 6px 0;
-  margin: 5px auto;
+  height: 34px;
+  padding: 3px 0;
+  margin: 8px auto;
   font-size: 1.4em;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -1038,7 +1038,7 @@ body {
   display: none;
 }
 .page__footer-item_hair-more {
-  margin-right: 5%;
+  margin-right: 3%;
   padding-bottom: 10px;
 }
 .page__footer-connect {
@@ -1185,7 +1185,7 @@ body {
 .nav-bottom__item {
   float: left;
   text-align: center;
-  padding-right: 4.83701367%;
+  padding-right: 5.3%;
 }
 .nav-bottom__item:last-child {
   padding-right: 0;
@@ -1206,7 +1206,7 @@ body {
     width: 84.58083832%;
   }
   .nav-bottom__item {
-    padding-right: 3.89064143%;
+    padding-right: 5%;
   }
   .nav-bottom__item:last-child {
     padding-right: 0;
@@ -1214,7 +1214,7 @@ body {
 }
 @media only screen and (max-width: 1100px) {
   .nav-bottom__item {
-    padding-right: 3.36487907%;
+    padding-right: 4.5%;
   }
   .nav-bottom__item:last-child {
     padding-right: 0;
@@ -1237,7 +1237,7 @@ body {
     padding: 8px 1.05152471% 0 1.05152471%;
   }
   .nav-bottom__item {
-    padding-right: 2.94426919%;
+    padding-right: 3.7%;
   }
   .nav-bottom__item:last-child {
     padding-right: 0;
@@ -1545,18 +1545,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
-  .page__content-about_lent-title {
-    width: 258px;
-    height: 32px;
-    padding: 6px 0;
-    margin: 5px auto;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    position: relative;
-    top: 7px;
-    text-transform: uppercase;
-  }
   .page__content-about_text {
     color: #000;
     font: 0.9375em helveticaregular;
@@ -1606,18 +1594,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .page__content-mission_lent-title {
-    width: 335px;
-    height: 32px;
-    padding: 6px 0;
-    margin: 5px auto;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    position: relative;
-    top: 7px;
-    text-transform: uppercase;
   }
   .page__content-mission_text {
     width: 71.51162791%;
@@ -1703,18 +1679,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .page__content-events_lent-title {
-    width: 318px;
-    height: 32px;
-    padding: 6px 0;
-    margin: 5px auto;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    position: relative;
-    top: 7px;
-    text-transform: uppercase;
   }
   .page__content-events_text {
     color: #000;
@@ -2067,27 +2031,27 @@ body {
     padding-right: 0;
   }
 }
-@media only screen and (max-width: 967px) {
+@media only screen and (max-width: 982px) {
+  .nav-bottom__item {
+    padding-right: 8%;
+  }
+  .nav-bottom__global {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
   .nav-bottom__item {
     padding-right: 7%;
   }
-  .nav-bottom__item__global {
+  .nav-bottom__global {
     padding-right: 0;
   }
 }
-@media only screen and (max-width: 880px) {
-  .page__nav-bottom-item {
-    padding-right: 5.81395349%;
+@media only screen and (max-width: 830px) {
+  .nav-bottom__item {
+    padding-right: 5.8%;
   }
-  .page__nav-bottom_global {
-    padding-right: 0;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .page__nav-bottom-item {
-    padding-right: 5.23255814%;
-  }
-  .page__nav-bottom_global {
+  .nav-bottom__global {
     padding-right: 0;
   }
 }
@@ -2127,34 +2091,10 @@ body {
     background: #fff;
     margin-bottom: 50px;
   }
-  .header_mobile .top-bar {
-    width: 100%;
-    height: 41px;
-    border-bottom: 2px solid #000;
-    position: relative;
-  }
-  .header_mobile .top-bar__item {
-    position: absolute;
-  }
-  .header_mobile .top-bar__item-signal {
-    width: 5.9375%;
-    bottom: 0px;
-    left: 0;
-  }
-  .header_mobile .top-bar__item-lock {
-    width: 3.125%;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .header_mobile .top-bar__item-battery {
-    width: 6.5625%;
-    right: 0;
-    bottom: 0px;
-  }
   .header_mobile .menu {
     height: 112px;
     *zoom: 1;
+    border-top: 2px solid #000;
     border-bottom: 2px solid #000;
   }
   .header_mobile .menu:before,

@@ -245,20 +245,6 @@
                         left: 50%;
                         transform: translateX(-50%);
                     }
-                    &-title{
-                        width: 258px;
-                        height: 32px;
-                        padding: 6px 0;
-                        margin: 5px auto;
-//                        font-size: 1.1em;
-                        border-top: 1px solid #fff;
-                        border-bottom: 1px solid #fff;
-                        color: #fff;
-                        position: relative;
-                        top: 7px;
-                        text-transform: uppercase;
-//                        font-family: tradegothiclight;
-                    }
                 }
                 &_text{
                     color: #000;
@@ -311,20 +297,6 @@
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
-                    }
-                    &-title{
-                        width: 335px;
-                        height: 32px;
-                        padding: 6px 0;
-                        margin: 5px auto;
-//                        font-size: 1.1em;
-                        border-top: 1px solid #fff;
-                        border-bottom: 1px solid #fff;
-                        color: #fff;
-                        position: relative;
-                        top: 7px;
-                        text-transform: uppercase;
-//                        font-family: tradegothiclight;
                     }
                 }
                 &_text{
@@ -394,20 +366,6 @@
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
-                    }
-                    &-title{
-                        width: 318px;
-                        height: 32px;
-                        padding: 6px 0;
-                        margin: 5px auto;
-//                        font-size: 1.1em;
-                        border-top: 1px solid #fff;
-                        border-bottom: 1px solid #fff;
-                        color: #fff;
-                        position: relative;
-                        top: 7px;
-                        text-transform: uppercase;
-//                        font-family: tradegothiclight;
                     }
                 }
                 &_text{
@@ -656,32 +614,6 @@
                 }
             }
         }
-//        &__nav-bottom{
-//            padding: 8px (34/688*100%);
-//            background: #000;
-//            .clearfix;
-//            &-item{
-//                float: left;
-//                text-align: center;
-//                padding-right: (58/688*100%);
-//                &:first-child{
-//                    padding-left: 0;
-//                }
-//                &:last-child{
-//                    padding-right: 0;
-//                }
-//            }
-//            &-link{
-//                font-size: (11/16em);
-//                color: #fff;
-//            }
-//            &_tel{
-//                display: none;
-//            }
-//            &_global{
-//                padding-right: 0;
-//            }
-//        }
     }
     .nav-bottom{
         background: #000;
@@ -689,7 +621,6 @@
         &__i{
             &:extend(.container);
             .clearfix;
-//            background: #000;
             padding-top: 8px;
             padding-bottom: 8px;
         }
@@ -717,27 +648,27 @@
         }
     }
 }
-@media only screen and (max-width: 967px){
+@media only screen and (max-width: 982px){
     .nav-bottom__item{
-        padding-right: 7%;
-        &__global{
-            padding-right: 0;
-        }
+        padding-right: 8%;
     }
-}
-@media only screen and (max-width: 880px){
-    .page__nav-bottom-item{
-        padding-right: (40/688*100%);
-    }
-    .page__nav-bottom_global{
+    .nav-bottom__global{
         padding-right: 0;
     }
 }
-@media only screen and (max-width: 800px){
-    .page__nav-bottom-item{
-        padding-right: (36/688*100%);
+@media only screen and (max-width: 900px){
+    .nav-bottom__item{
+        padding-right: 7%;
     }
-    .page__nav-bottom_global{
+    .nav-bottom__global{
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 830px){
+    .nav-bottom__item{
+        padding-right: 5.8%;
+    }
+    .nav-bottom__global{
         padding-right: 0;
     }
 }
