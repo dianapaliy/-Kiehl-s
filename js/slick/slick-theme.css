@@ -127,28 +127,28 @@
     .slick-prev,
     .slick-next
     {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
     }
     .slick-prev
     {
-        left: -57px;
-        background-size: 42px;
+        left: -31px;
+        background-size: 20px;
     }
     [dir='rtl'] .slick-prev
     {
-        right: -45px;
+        right: -20px;
         left: auto;
     }
 
     .slick-next
     {
-        right: -57px;
-        background-size: 40px;
+        right: -31px;
+        background-size: 20px;
     }
     [dir='rtl'] .slick-next
     {
         right: auto;
-        left: -45px;
+        left: -20px;
     }
 }
