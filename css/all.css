@@ -2138,13 +2138,19 @@ body {
     top: 50%;
   }
   .header_mobile .menu__item-img_vector {
-    width: 45%;
+    width: 24px;
   }
   .header_mobile .menu__item-img_place {
-    width: 30%;
+    width: 17px;
   }
   .header_mobile .menu__item-img_logo {
-    width: 100%;
+    width: 98px;
+  }
+  .header_mobile .menu__item-img_glass {
+    width: 22px;
+  }
+  .header_mobile .menu__item-img_32 {
+    width: 22px;
   }
   .header {
     display: none;
@@ -2194,7 +2200,7 @@ body {
   }
   .page__content-about_lent-img-mob {
     display: block;
-    width: 90%;
+    width: 225px;
     height: auto;
     margin: 0 auto;
     position: absolute;
@@ -2202,7 +2208,7 @@ body {
     transform: translateX(-50%);
   }
   .page__content-about_lent-title {
-    width: 80%;
+    width: 196px;
     height: 28px;
     padding: 3px 0;
     margin: 0px auto;
@@ -2261,7 +2267,7 @@ body {
   }
   .page__content-mission_lent-img-mob {
     display: block;
-    width: 80%;
+    width: 225px;
     height: auto;
     margin: 0 auto;
     position: absolute;
@@ -2269,7 +2275,7 @@ body {
     transform: translateX(-50%);
   }
   .page__content-mission_lent-title {
-    width: 70%;
+    width: 196px;
     height: 28px;
     padding: 4px 0;
     margin: 0px auto;
@@ -2371,7 +2377,7 @@ body {
   }
   .page__content-events_lent-img-mob {
     display: block;
-    width: 90%;
+    width: 225px;
     height: auto;
     margin: 0 auto;
     position: absolute;
@@ -2379,7 +2385,7 @@ body {
     transform: translateX(-50%);
   }
   .page__content-events_lent-title {
-    width: 80%;
+    width: 200px;
     height: 28px;
     padding: 4px 0;
     margin: 0px auto;
@@ -2533,7 +2539,7 @@ body {
   }
   .page__footer-social-item {
     float: left;
-    width: 11%;
+    width: 29px;
     margin-right: 11%;
   }
   .page__footer-social-item:last-child {
@@ -2548,10 +2554,10 @@ body {
   }
   .page__footer-signup {
     position: relative;
-    width: 100%;
+    width: 240px;
     box-sizing: border-box;
-    margin: 21px 0 26px;
-    padding: 0 8.21428571% 0 6.42857143%;
+    margin: 21px auto 26px;
+    padding: 0;
     bottom: 0;
     float: none;
   }
@@ -2562,9 +2568,9 @@ body {
     text-align: center;
   }
   .page__footer-signup_input {
-    width: 100%;
+    width: 240px;
     height: 32.5px;
-    padding: 10px 2.62605042%;
+    padding: 10px 6.2px;
     font-size: 0.34375em;
     border: 1px solid #ccc;
     position: relative;
@@ -2577,23 +2583,27 @@ body {
     background-size: 34px 32.5px;
     width: 34px;
     height: 32.5px;
-    right: 8.28%;
+    right: 0;
     bottom: 0;
   }
   .page__footer-tel {
-    display: block;
     width: 100%;
-    height: 61.5px;
-    padding: 15px 5.71428571%;
-    box-sizing: border-box;
-    border-left: 0;
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
+    border-left: 0;
+    height: 61.5px;
+    padding: 15px 0;
+    box-sizing: border-box;
     float: none;
+  }
+  .page__footer-tel_i {
+    display: block;
+    width: 248px;
+    margin: auto;
     color: #000;
     margin-bottom: 0;
   }
-  .page__footer-tel p {
+  .page__footer-tel_i p {
     float: left;
     font-size: 0.75em;
     text-transform: uppercase;
@@ -2601,7 +2611,7 @@ body {
     border-right: 1px solid #ccc;
     box-sizing: border-box;
   }
-  .page__footer-tel span {
+  .page__footer-tel_i span {
     float: left;
     font-size: 0.75em;
     font-weight: normal;
@@ -2634,6 +2644,7 @@ body {
     display: inline-block;
     text-align: center;
     font-size: 1.5em;
+    box-sizing: border-box;
   }
   .page__nav-bottom-item:first-child {
     display: block;
@@ -2655,18 +2666,27 @@ body {
   .page__nav-bottom_tel {
     display: none;
   }
-  .page__nav-bottom_global {
+  .page__nav-bottom__global {
+    float: right;
+    width: 33.3%;
     padding-right: 0;
-    padding-left: 7.14285714%;
+    right: 0;
+    padding: 0;
   }
-  .page__nav-bottom_privacy {
+  .page__nav-bottom__privacy {
+    float: left;
+    width: 33.3%;
+    left: 0;
+    padding: 0;
     border-right: 1px solid #525252;
-    padding-right: 6.78571429%;
   }
-  .page__nav-bottom_terms {
+  .page__nav-bottom__terms {
+    float: left;
+    width: 33.3%;
+    left: 50%;
+    padding: 0;
+    transform: translateX(-50%);
     border-right: 1px solid #525252;
-    padding-right: 6.78571429%;
-    padding-left: 7.14285714%;
   }
   .nav-bottom {
     background: #000;
@@ -2739,20 +2759,27 @@ body {
     display: none;
   }
   .nav-bottom__global {
+    float: right;
+    width: 33.3%;
+    right: 0;
+    padding: 0;
     margin: 11px 0;
-    padding-right: 0;
-    padding-left: 4.8%;
   }
   .nav-bottom__privacy {
+    float: right;
+    width: 33.3%;
+    right: 0;
+    padding: 0;
     margin: 11px 0;
     border-right: 1px solid #525252;
-    padding-right: 6.78571429%;
   }
   .nav-bottom__terms {
+    float: right;
+    width: 33.3%;
+    right: 0;
+    padding: 0;
     margin: 11px 0;
     border-right: 1px solid #525252;
-    padding-right: 6.78571429%;
-    padding-left: 5%;
   }
 }
 /*# sourceMappingURL=css/all.css.map */

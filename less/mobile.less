@@ -53,13 +53,19 @@
                     transform: translate(-50%, -50%);
                     top: 50%;
                     &_vector{
-                        width: 45%;
+                        width: 24px;
                     }
                     &_place{
-                        width: 30%;
+                        width: 17px;
                     }
                     &_logo{
-                        width: 100%;
+                        width: 98px;
+                    }
+                    &_glass{
+                        width: 22px;
+                    }
+                    &_32{
+                        width: 22px;
                     }
                 }
             }
@@ -109,7 +115,7 @@
                         display: none;
                         &-mob{
                             display: block;
-                            width: 90%;
+                            width: 225px;
                             height: auto;
                             margin: 0 auto;
                             position: absolute;
@@ -118,7 +124,7 @@
                         }
                     }
                     &-title{
-                        width: 80%;
+                        width: 196px;
                         height: 28px;
                         padding: 3px 0;
                         margin: 0px auto;
@@ -176,7 +182,7 @@
                         display: none;
                         &-mob{
                             display: block;
-                            width: 80%;
+                            width: 225px;
                             height: auto;
                             margin: 0 auto;
                             position: absolute;
@@ -185,7 +191,7 @@
                         }
                     }
                     &-title{
-                        width: 70%;
+                        width: 196px;
                         height: 28px;
                         padding: 4px 0;
                         margin: 0px auto;
@@ -269,7 +275,7 @@
                         display: none;
                         &-mob{
                             display: block;
-                            width: 90%;
+                            width: 225px;
                             height: auto;
                             margin: 0 auto;
                             position: absolute;
@@ -278,7 +284,7 @@
                         }
                     }
                     &-title{
-                        width: 80%;
+                        width: 200px;
                         height: 28px;
                         padding: 4px 0;
                         margin: 0px auto;
@@ -401,7 +407,7 @@
                 padding: 23px 10px 18px;
                 &-item{
                     float: left;
-                    width: 11%;
+                    width: 29px;
                     margin-right: 11%;
                     &:last-child{
                         margin-right: 0;
@@ -417,10 +423,10 @@
             }
             &-signup{
                 position: relative;
-                width: 100%;
+                width: 240px;
                 box-sizing: border-box;
-                margin: 21px 0 26px;
-                padding: 0 (46/560*100%) 0 (36/560*100%);
+                margin: 21px auto 26px;
+                padding: 0;
                 bottom: 0;
                 float: none;
                 p{
@@ -430,9 +436,9 @@
                     text-align: center;
                 }
                 &_input{
-                    width: 100%;
+                    width: 240px;
                     height: 65/2px;
-                    padding: 20/2px (25/2/476*100%);
+                    padding: 20/2px 6.2px;
                     font-size: (11/2/16em);
                     border: 1px solid #ccc;
                     position: relative;
@@ -445,35 +451,39 @@
                     background-size: 68/2px 65/2px;
                     width: 68/2px;
                     height: 65/2px;
-                    right: 8.28%;
+                    right: 0;
                     bottom: 0;
                 }
             }
             &-tel{
-                display: block;
                 width: 100%;
-                height: 123/2px;
-                padding: 30/2px (32/560*100%);
-                box-sizing: border-box;
-                border-left: 0;
                 border-bottom: 1px solid #000;
                 border-top: 1px solid #000;
+                border-left: 0;
+                height: 123/2px;
+                padding: 30/2px 0;
+                box-sizing: border-box;
                 float: none;
-                color: #000;
-                margin-bottom: 0;
-                p{
-                    float: left;
-                    font-size: (24/2/16em);
-                    text-transform: uppercase;
-                    padding: 9px 19px 10px 2px;
-                    border-right: 1px solid #ccc;
-                    box-sizing: border-box;
-                }
-                span{
-                    float: left;
-                    font-size: (24/2/16em);
-                    font-weight: normal;
-                    padding: 22/2px 0 20/2px 30/2px;
+                &_i{
+                    display: block;
+                    width: 248px;
+                    margin: auto;
+                    color: #000;
+                    margin-bottom: 0;
+                    p{
+                        float: left;
+                        font-size: (24/2/16em);
+                        text-transform: uppercase;
+                        padding: 9px 19px 10px 2px;
+                        border-right: 1px solid #ccc;
+                        box-sizing: border-box;
+                    }
+                    span{
+                        float: left;
+                        font-size: (24/2/16em);
+                        font-weight: normal;
+                        padding: 22/2px 0 20/2px 30/2px;
+                    }
                 }
             }
         }
@@ -486,6 +496,7 @@
                 display: inline-block;
                 text-align: center;
                 font-size: (24/16em);
+                box-sizing: border-box;
 //                padding-right: (58/688*100%);
                 &:first-child{
                     display: block;
@@ -509,18 +520,32 @@
             &_tel{
                 display: none;
             }
-            &_global{
+            &__global{
+                float: right;
+                width: 33.3%;
                 padding-right: 0;
-                padding-left: (40/560*100%);
+                right: 0;
+                padding: 0;
+//                padding-left: (40/560*100%);
             }
-            &_privacy{
+
+            &__privacy{
+                float: left;
+                width: 33.3%;
+                left: 0;
+                padding: 0;
                 border-right: 1px solid #525252;
-                padding-right: (38/560*100%);
+//                padding-right: (38/560*100%);
             }
-            &_terms{
+            &__terms{
+                float: left;
+                width: 33.3%;
+                left: 50%;
+                padding: 0;
+                transform: translateX(-50%);
                 border-right: 1px solid #525252;
-                padding-right: (38/560*100%);
-                padding-left: (40/560*100%);
+//                padding-right: (38/560*100%);
+//                padding-left: (40/560*100%);
             }
         }
     }
@@ -561,20 +586,35 @@
             display: none;
         }
         &__global{
+            float: right;
+            width: 33.3%;
+//            padding-right: 0;
+            right: 0;
+            padding: 0;
             margin: 11px 0;
-            padding-right: 0;
-            padding-left: 4.8%;
+//            padding-right: 0;
+//            padding-left: 4.8%;
         }
         &__privacy{
+            float: right;
+            width: 33.3%;
+//            padding-right: 0;
+            right: 0;
+            padding: 0;
             margin: 11px 0;
             border-right: 1px solid #525252;
-            padding-right: (38/560*100%);
+//            padding-right: (38/560*100%);
         }
         &__terms{
+            float: right;
+            width: 33.3%;
+//            padding-right: 0;
+            right: 0;
+            padding: 0;
             margin: 11px 0;
             border-right: 1px solid #525252;
-            padding-right: (38/560*100%);
-            padding-left: 5%;
+//            padding-right: (38/560*100%);
+//            padding-left: 5%;
         }
     }
 }
