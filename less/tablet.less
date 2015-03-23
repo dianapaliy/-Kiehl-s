@@ -97,7 +97,7 @@
                     background: url(../images/flag.png) no-repeat;
                     width: 16px;
                     height: 11px;
-                    top:12px;
+                    top:14px;
                 }
             }
         }
@@ -233,7 +233,6 @@
                 text-align: center;
                 &_lent{
                     width: 100%;
-                    //                text-align: center;
                     position: relative;
                     height: 46px;
                     &-img{
@@ -242,8 +241,8 @@
                         height: auto;
                         margin: 0 auto;
                         position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
+//                        left: 50%;
+//                        transform: translateX(-50%);
                     }
                 }
                 &_text{
@@ -295,8 +294,8 @@
                         height: auto;
                         margin: 0 auto;
                         position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
+//                        left: 50%;
+//                        transform: translateX(-50%);
                     }
                 }
                 &_text{
@@ -313,33 +312,39 @@
                 &_money{
                     color: #e71c25;
                     .clearfix;
-                    max-width: 562px;
+                    max-width: 570px;
                     margin: 0 auto;
                     position: relative;
                     font-weight: bold;
-                    font-size: 100%;
+//                    font-size: 100%;
                     .sign{
                         vertical-align: middle;
                         float: left;
                     }
                     .money-num{
                         margin: 0 5px;
-                        padding: 2px 15px 0;
+                        padding: 0px 15px 0;
                         border: 2px solid #4f4e4d;
                         font-size: (48/16em);
+                        &_first{
+                            &:before{
+                                content: '$';
+                                position: absolute;
+//                                width: 27px;
+//                                height: 56px;
+                                left: -50px;
+                                //                        font-size: (56/16em);
+                                font-size: 56px;
+                                top: 3px;
+                            }
+                        }
                     }
                     .money-pt{
                         padding: 0 10px;
-                        margin-top: 12px;
+//                        margin-top: 12px;
                         font-size: (48/16em);
                     }
-                    &:before{
-                        content: '$';
-                        position: absolute;
-                        left: -50px;
-                        font-size: (56/16em);
-                        top: 32px;
-                    }
+
                 }
                 &_img{
                     padding: 0 0 21px;
@@ -364,8 +369,8 @@
                         height: auto;
                         margin: 0 auto;
                         position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
+//                        left: 50%;
+//                        transform: translateX(-50%);
                     }
                 }
                 &_text{
@@ -445,7 +450,7 @@
                 width: 33.3%;
                 float: left;
                 margin-right: 0;
-                min-height: 175px;
+                min-height: 190px;
                 ul li{
                     font-size: 0.625em;
                     color: #000;
@@ -498,7 +503,7 @@
                         margin: 0;
                         width: 100%;
                         a{
-                            font-size: (10/16em);
+                            font-size: (11/16em);
                             margin: 0;
                             padding: 0;
                             text-transform: uppercase;
@@ -611,6 +616,7 @@
                 }
                 span{
                     font-size: (10/16em);
+                    color: #000;
                 }
             }
         }

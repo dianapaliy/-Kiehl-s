@@ -50,7 +50,8 @@
                     width: 40%;
                     position: absolute;
                     left: 49%;
-                    transform: translate(-50%, -50%);
+                    .translate(-50%, -50%);
+//                    transform: translate(-50%, -50%);
                     top: 50%;
                     &_vector{
                         width: 24px;
@@ -120,13 +121,15 @@
                             margin: 0 auto;
                             position: absolute;
                             left: 50%;
-                            transform: translateX(-50%);
+                            .translate(-50%, 0);
+//                            transform: translateX(-50%);
                         }
                     }
                     &-title{
                         width: 196px;
                         height: 28px;
-                        padding: 3px 0;
+                        line-height: 26px;
+                        padding: 0px 0;
                         margin: 0px auto;
                         font-size: (16/16em);
                         border-top: 1px solid #fff;
@@ -135,7 +138,7 @@
                         position: relative;
                         top: 4px;
                         text-transform: uppercase;
-                        font-family: tradegothiclight;
+//                        font-family: tradegothiclight;
                     }
                 }
                 &_text{
@@ -188,23 +191,25 @@
                             margin: 0 auto;
                             position: absolute;
                             left: 50%;
-                            transform: translateX(-50%);
+                            .translate(-50%, 0);
+//                            transform: translateX(-50%);
                         }
                     }
                     &-title{
                         width: 196px;
                         height: 28px;
-                        padding: 4px 0;
+                        line-height: 26px;
+                        padding: 0px 0;
                         margin: 0px auto;
-//                        font-size: 0.91em;
-                        font-size: 0.87em;
+                        font-size: 0.91em;
+//                        font-size: 0.8em;
                         border-top: 1px solid #fff;
                         border-bottom: 1px solid #fff;
                         color: #fff;
                         position: relative;
                         top: 4px;
                         text-transform: uppercase;
-                        font-family: tradegothiclight;
+//                        font-family: tradegothiclight;
                     }
                 }
                 &_text{
@@ -224,13 +229,14 @@
                     color: #e71c25;
                     .clearfix;
 //                    width: 90%;
-                    width: 252px;
+//                    width: 252px;
+                    width: 260px;
                     margin: 0 auto;
                     padding-left: 28px;
                     position: relative;
-                    font-family: tradegothiclight;
+//                    font-family: tradegothiclight;
                     font-weight: bold;
-                    font-size: 100%;
+//                    font-size: 100%;
                     .sign{
                         vertical-align: middle;
                         float: left;
@@ -243,19 +249,22 @@
                         height: 25px;
                         line-height: 25px;
                         box-sizing: border-box;
+                        &_first{
+                            &:before{
+                                content: '$';
+                                position: absolute;
+                                left: 5.5px;
+//                                                        font-size: 3/2em;
+                                font-size: 24px;
+                                top: 1px;
+                            }
+                        }
                     }
                     .money-pt{
                         padding: 0;
                         bottom: 0;
                         margin-top: -3px;
                         font-size: (48/2/16em);
-                    }
-                    &:before{
-                        content: '$';
-                        position: absolute;
-                        left: 5.5px;
-                        font-size: 3/2em;
-                        top: 25/2px;
                     }
                 }
                 &_img{
@@ -283,13 +292,15 @@
                             margin: 0 auto;
                             position: absolute;
                             left: 50%;
-                            transform: translateX(-50%);
+                            .translate(-50%, 0);
+//                            transform: translateX(-50%);
                         }
                     }
                     &-title{
                         width: 200px;
                         height: 28px;
-                        padding: 4px 0;
+                        line-height: 26px;
+                        padding: 0px 0;
                         margin: 0px auto;
                         font-size: 0.91em;
                         border-top: 1px solid #fff;
@@ -298,7 +309,7 @@
                         position: relative;
                         top: 4px;
                         text-transform: uppercase;
-                        font-family: tradegothiclight;
+//                        font-family: tradegothiclight;
                     }
                 }
                 &_text{
