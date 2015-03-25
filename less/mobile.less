@@ -83,7 +83,7 @@
         .bread-crumbs{
             display: none;
         }
-        &__content{
+        .content{
             width: 100%;
             position: relative;
             background: #f5efe6;
@@ -129,6 +129,13 @@
                     position: absolute;
                     left: 50%;
                     .translate(-50%, 0);
+                }
+                &_about,
+                &_mission{
+                    width: 224px;
+                }
+                &_events{
+                    width: 230px;
                 }
             }
         }
@@ -376,10 +383,7 @@
                 position: relative;
                 display: block;
             }
-            &:after{
-                content: '';
-                position: absolute;
-                background: url(../images/signup.png) no-repeat;
+            &__btn{
                 background-size: 68/2px 65/2px;
                 width: 68/2px;
                 height: 65/2px;
@@ -471,7 +475,7 @@
         &__privacy{
             float: right;
             width: 33.3%;
-            right: 0;
+            left: 0;
             padding: 0;
             margin: 11px 0;
         }

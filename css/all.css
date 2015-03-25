@@ -543,7 +543,7 @@ body {
   top: 7px;
 }
 .header-nav__link_flag {
-  font-family: helveticaregular;
+  font-family: Helvetica;
 }
 .header-nav__link_flag:before {
   background: url(../images/flag.png) no-repeat;
@@ -619,7 +619,8 @@ body {
 }
 .page .bread-crumbs__item {
   float: left;
-  font: 0.6875em helveticaregular;
+  font-size: 0.6875em;
+  font-family: Helvetica, Arial;
   color: #767676;
 }
 .page .bread-crumbs__item_slash {
@@ -703,7 +704,8 @@ body {
 }
 .page .content-about__text {
   color: #000;
-  font: 0.9375em helveticaregular;
+  font-size: 0.9375em;
+  font-family: Helvetica, Arial;
   font-weight: bold;
   padding: 26px 0 21px;
 }
@@ -723,7 +725,8 @@ body {
   padding-bottom: 16px;
 }
 .page .content-about__author {
-  font: 0.8125em helveticaregular;
+  font-size: 0.8125em;
+  font-family: Helvetica, Arial;
   font-weight: bold;
   color: #000;
   padding-top: 7px;
@@ -742,7 +745,8 @@ body {
 }
 .page .content-mission__text {
   color: #000;
-  font: 0.9375em helveticaregular;
+  font-size: 0.9375em;
+  font-family: Helvetica, Arial;
   font-weight: bold;
   padding: 26px 0 26px;
 }
@@ -814,7 +818,8 @@ body {
 }
 .page .content-events__text {
   color: #000;
-  font: 0.9375em helveticaregular;
+  font-size: 0.9375em;
+  font-family: Helvetica, Arial;
   font-weight: bold;
   line-height: 1.35em;
 }
@@ -1027,8 +1032,7 @@ body {
   position: relative;
   display: block;
 }
-.page .footer-signup:after {
-  content: '';
+.page .footer-signup__btn {
   position: absolute;
   background: url(../images/signup.png) no-repeat;
   width: 25px;
@@ -1036,6 +1040,8 @@ body {
   right: 0;
   bottom: 0;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 .page .footer-tel {
   display: none;
@@ -1118,56 +1124,60 @@ body {
 .page-header__search-input {
   width: 100%;
   padding: 6px 8px;
-  font: 0.75em helveticaregular;
+  font-size: 0.75em;
+  font-family: Helvetica, Arial;
   border: 1px solid #ccc;
 }
 .nav-bottom {
   *zoom: 1;
 }
 .nav-bottom__i {
-  *zoom: 1;
+  background: #fff;
+}
+.nav-bottom:before,
+.nav-bottom:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+.nav-bottom:after {
+  clear: both;
+}
+.nav-bottom:before,
+.nav-bottom:after {
+  content: "";
+  display: table;
+}
+.nav-bottom:after {
+  clear: both;
+}
+.nav-bottom__list {
+  width: 100%;
   background: #000;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  *zoom: 1;
+  padding: 8px 14px;
 }
-.nav-bottom__i:before,
-.nav-bottom__i:after {
+.nav-bottom__list:before,
+.nav-bottom__list:after {
   content: " ";
   display: table;
   line-height: 0;
 }
-.nav-bottom__i:after {
+.nav-bottom__list:after {
   clear: both;
 }
-.nav-bottom__i:before,
-.nav-bottom__i:after {
+.nav-bottom__list:before,
+.nav-bottom__list:after {
   content: "";
   display: table;
 }
-.nav-bottom__i:after {
-  clear: both;
-}
-.nav-bottom:before,
-.nav-bottom:after {
-  content: " ";
-  display: table;
-  line-height: 0;
-}
-.nav-bottom:after {
-  clear: both;
-}
-.nav-bottom:before,
-.nav-bottom:after {
-  content: "";
-  display: table;
-}
-.nav-bottom:after {
+.nav-bottom__list:after {
   clear: both;
 }
 .nav-bottom__item {
   float: left;
   text-align: center;
-  padding-right: 5.3%;
+  padding-right: 5%;
 }
 .nav-bottom__item:last-child {
   padding-right: 0;
@@ -1757,14 +1767,8 @@ body {
     bottom: 0;
     float: left;
   }
-  .page .footer-signup:after {
-    content: '';
-    position: absolute;
-    background: url(../images/signup.png) no-repeat;
-    width: 25px;
-    height: 25px;
+  .page .footer-signup__btn {
     right: 12.78195489%;
-    bottom: 0;
   }
   .page .footer-tel {
     display: block;
@@ -1858,42 +1862,46 @@ body {
     *zoom: 1;
   }
   .nav-bottom__i {
+    background: #000;
+  }
+  .nav-bottom:before,
+  .nav-bottom:after {
+    content: " ";
+    display: table;
+    line-height: 0;
+  }
+  .nav-bottom:after {
+    clear: both;
+  }
+  .nav-bottom:before,
+  .nav-bottom:after {
+    content: "";
+    display: table;
+  }
+  .nav-bottom:after {
+    clear: both;
+  }
+  .nav-bottom__list {
+    width: 100%;
+    background: #000;
     *zoom: 1;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0;
   }
-  .nav-bottom__i:before,
-  .nav-bottom__i:after {
+  .nav-bottom__list:before,
+  .nav-bottom__list:after {
     content: " ";
     display: table;
     line-height: 0;
   }
-  .nav-bottom__i:after {
+  .nav-bottom__list:after {
     clear: both;
   }
-  .nav-bottom__i:before,
-  .nav-bottom__i:after {
+  .nav-bottom__list:before,
+  .nav-bottom__list:after {
     content: "";
     display: table;
   }
-  .nav-bottom__i:after {
-    clear: both;
-  }
-  .nav-bottom:before,
-  .nav-bottom:after {
-    content: " ";
-    display: table;
-    line-height: 0;
-  }
-  .nav-bottom:after {
-    clear: both;
-  }
-  .nav-bottom:before,
-  .nav-bottom:after {
-    content: "";
-    display: table;
-  }
-  .nav-bottom:after {
+  .nav-bottom__list:after {
     clear: both;
   }
   .nav-bottom__item {
@@ -2055,21 +2063,21 @@ body {
   .page .bread-crumbs {
     display: none;
   }
-  .page__content {
+  .page .content {
     width: 100%;
     position: relative;
     background: #f5efe6;
   }
-  .page__content__image_logo {
+  .page .content__image_logo {
     width: 32.14285714%;
     padding: 41px 0 33px;
   }
-  .page__content__lent {
+  .page .content__lent {
     width: 100%;
     position: relative;
     height: 36px;
   }
-  .page__content__lent-title {
+  .page .content__lent-title {
     height: 28px;
     line-height: 26px;
     padding: 0px 0;
@@ -2082,20 +2090,20 @@ body {
     top: 4px;
     text-transform: uppercase;
   }
-  .page__content__lent-title_about {
+  .page .content__lent-title_about {
     width: 196px;
   }
-  .page__content__lent-title_mission {
+  .page .content__lent-title_mission {
     width: 196px;
   }
-  .page__content__lent-title_event {
+  .page .content__lent-title_event {
     width: 200px;
     font-size: 0.91em;
   }
-  .page__content__lent-img {
+  .page .content__lent-img {
     display: none;
   }
-  .page__content__lent-img_mob {
+  .page .content__lent-img_mob {
     display: block;
     margin: 0 auto;
     position: absolute;
@@ -2105,6 +2113,13 @@ body {
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+  }
+  .page .content__lent-img_about,
+  .page .content__lent-img_mission {
+    width: 224px;
+  }
+  .page .content__lent-img_events {
+    width: 230px;
   }
   .page .content-about {
     width: 89.28571429%;
@@ -2398,10 +2413,7 @@ body {
     position: relative;
     display: block;
   }
-  .page .footer-signup:after {
-    content: '';
-    position: absolute;
-    background: url(../images/signup.png) no-repeat;
+  .page .footer-signup__btn {
     background-size: 34px 32.5px;
     width: 34px;
     height: 32.5px;
@@ -2541,7 +2553,7 @@ body {
   .nav-bottom__privacy {
     float: right;
     width: 33.3%;
-    right: 0;
+    left: 0;
     padding: 0;
     margin: 11px 0;
   }
