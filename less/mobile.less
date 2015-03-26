@@ -27,6 +27,7 @@
         display: block;
         background: #fff;
         margin-bottom: 26px;
+        margin-top: 21px;
         .menu{
             height: (112/2px);
             .clearfix;
@@ -77,76 +78,79 @@
         padding: 0;
         background: #fff;
         &:extend(.container);
-        .nav{
+        &-header{
             display: none;
         }
-        .bread-crumbs{
-            display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .bread-crumbs{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        position: relative;
+        background: #f5efe6;
+        &__image{
+            &_logo{
+                width: (180/560*100%);
+                padding: 41px 0 33px;
+            }
         }
-        .content{
+        &__lent{
             width: 100%;
             position: relative;
-            background: #f5efe6;
-            &__image{
-                &_logo{
-                    width: (180/560*100%);
-                    padding: 41px 0 33px;
-                }
+            height: 36px;
+        }
+        &__lent-title{
+            height: 28px;
+            line-height: 26px;
+            padding: 0px 0;
+            margin: 0px auto;
+            font-size: (16/16em);
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            position: relative;
+            top: 4px;
+            text-transform: uppercase;
+            &_about{
+                width: 196px;
             }
-            &__lent{
-                width: 100%;
-                position: relative;
-                height: 36px;
+            &_mission{
+                width: 196px;
             }
-            &__lent-title{
-                height: 28px;
-                line-height: 26px;
-                padding: 0px 0;
-                margin: 0px auto;
-                font-size: (16/16em);
-                border-top: 1px solid #fff;
-                border-bottom: 1px solid #fff;
-                color: #fff;
-                position: relative;
-                top: 4px;
-                text-transform: uppercase;
-                &_about{
-                    width: 196px;
-                }
-                &_mission{
-                    width: 196px;
-                }
-                &_event{
-                    width: 200px;
-                    font-size: 0.91em;
-                }
-            }
-            &__lent-img {
-                display: none;
-                &_mob{
-                    display: block;
-                    margin: 0 auto;
-                    position: absolute;
-                    left: 50%;
-                    .translate(-50%, 0);
-                }
-                &_about,
-                &_mission{
-                    width: 224px;
-                }
-                &_events{
-                    width: 230px;
-                }
+            &_event{
+                width: 200px;
+                font-size: 0.91em;
             }
         }
-        .content-about {
+        &__lent-img {
+            display: none;
+            &_mob{
+                display: block;
+                margin: 0 auto;
+                position: absolute;
+                left: 50%;
+                .translate(-50%, 0);
+            }
+            &_about,
+            &_mission{
+                width: 224px;
+            }
+            &_events{
+                width: 230px;
+            }
+        }
+        &-about {
             width: (500/560*100%);
             margin: 0 auto;
             text-align: center;
             &__text{
                 color: #000;
-                font: (26/2/16em) helveticaregular;
-                font-weight: bold;
+                font-size: (26/2/16em);
+//                font-weight: bold;
                 padding: 38/2px 0;
                 line-height: 1.4em;
             }
@@ -161,8 +165,9 @@
                 padding-bottom: 8/2px;
             }
             &__author{
-                font: (22/2/16em) helveticaregular;
-                padding-top: 11px;
+                font-size: 0.75em;
+                padding-top: 13px;
+                letter-spacing: -0.5px;
             }
             &__img{
                 padding: 26px 0 28px 12px;
@@ -172,26 +177,27 @@
                 display: block;
             }
         }
-        .content-mission{
+        &-mission{
             width: 100%;
             text-align: center;
             &__text{
                 width: (500/560*100%);
                 color: #000;
-                font: (26/2/16em) helveticaregular;
-                font-weight: bold;
+                font-size: (26/2/16em);
+//                font-weight: bold;
                 padding: 38/2px 0 21px 0;
                 line-height: 1.4em;
-                &-little{
+                &_little{
                     padding: 19.5px 0 16px;
-                    font: (22/2/16em) helveticaregular;
+                    font-size: (22/2/16em);
+
                     font-weight: normal;
                 }
             }
             &__money{
                 color: #e71c25;
                 .clearfix;
-                width: 260px;
+                width: 252px;
                 margin: 0 auto;
                 padding-left: 28px;
                 position: relative;
@@ -233,15 +239,15 @@
                 display: block;
             }
         }
-        .content-events {
+        &-events {
             width: (500/560*100%);
             margin: 0 auto;
             text-align: center;
             &__text{
                 width: (500/560*100%);
                 color: #000;
-                font: (26/2/16em) helveticaregular;
-                font-weight: bold;
+                font-size: (26/2/16em);
+//                font-weight: bold;
                 padding: 38/2px 0 21px 0;
                 line-height: 1.4em;
                 margin: 0 auto;
@@ -258,7 +264,7 @@
                 }
             }
         }
-        .content-slider{
+        &-slider{
             width: 400/2px;
             height: 139px;
             position: relative;
@@ -281,66 +287,60 @@
                 }
             }
         }
-        .content-bottom{
-            height: 180px;
+        &-bottom{
+            height: 235px;
             width: 100%;
             position: relative;
             margin-bottom: 0;
-            &__image{
-                position: absolute;
-                width: 100%;
-                height: auto;
-                bottom: 0;
-            }
         }
-        .footer{
-            border-top: 2px solid #000;
-            width: 100%;
-            position: relative;
-            .clearfix;
-            &_border{
-                display: none;
-            }
-            &__logo{
-                display: none;
-            }
-            &__list{
-                display: none;
-            }
-            &__item{
-                width: 33.3%;
-                float: left;
-                margin-right: 0;
-                min-height: 190/2px;
-                ul li{
-                    font-size: 0.625em;
-                    color: #000;
-                    padding: 0 0 10/2px 0;
-                    &:first-child{
-                        font-size: 0.6875em;
-                        padding: 0 0 20/2px 0;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                    }
-                    &:last-child{
-                        padding: 0 0 26/2px 0;
-                    }
-                }
-                &_hair {
-                    float: left;
-                }
-                &_desk{
-                    display: none;
-                }
-                &_tablet{
-                    display: block;
-                }
-            }
-        }
-        .footer-connect{
+    }
+    .footer{
+        border-top: 2px solid #000;
+        width: 100%;
+        position: relative;
+        .clearfix;
+        &_border{
             display: none;
         }
-        .footer-social{
+        &__logo{
+            display: none;
+        }
+        &__list{
+            display: none;
+        }
+        &__item{
+            width: 33.3%;
+            float: left;
+            margin-right: 0;
+            min-height: 190/2px;
+            ul li{
+                font-size: 0.625em;
+                color: #000;
+                padding: 0 0 10/2px 0;
+                &:first-child{
+                    font-size: 0.6875em;
+                    padding: 0 0 20/2px 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                &:last-child{
+                    padding: 0 0 26/2px 0;
+                }
+            }
+            &_hair {
+                float: left;
+            }
+            &_desk{
+                display: none;
+            }
+            &_tablet{
+                display: block;
+            }
+        }
+        &-connect{
+            display: none;
+        }
+        &-social{
             display: block;
             .clearfix;
             padding: 23px 10px 18px;
@@ -360,11 +360,11 @@
                 }
             }
         }
-        .footer-signup {
+        &-signup {
             position: relative;
-            width: 240px;
+            width: 236px;
             box-sizing: border-box;
-            margin: 21px auto 26px;
+            margin: 21px auto 27px;
             padding: 0;
             bottom: 0;
             float: none;
@@ -375,7 +375,7 @@
                 text-align: center;
             }
             &__input{
-                width: 240px;
+                width: 236px;
                 height: 65/2px;
                 padding: 20/2px 6.2px;
                 font-size: (12/16em);
@@ -391,7 +391,7 @@
                 bottom: 0;
             }
         }
-        .footer-tel{
+        &-tel{
             width: 100%;
             border-bottom: 1px solid #000;
             border-top: 1px solid #000;
@@ -400,6 +400,7 @@
             padding: 30/2px 0;
             box-sizing: border-box;
             float: none;
+            margin-bottom: 0;
             &_i{
                 display: block;
                 width: 248px;
@@ -425,9 +426,6 @@
             }
         }
     }
-    .page-header{
-        display: none;
-    }
     .nav-bottom{
         background: #000;
         padding: 0;
@@ -438,6 +436,11 @@
             margin-bottom: 12px;
         }
         .clearfix;
+        &__list{
+            padding: 0;
+            width: 280px;
+            margin: 0 auto;
+        }
         &__item{
             float: none;
             display: inline-block;
@@ -465,56 +468,49 @@
             display: none;
         }
         &__global{
-            float: right;
-            width: 33.3%;
-            right: 0;
-            padding: 0;
+            text-align: right;
+            padding: 0 0 0 4.5%;
+            margin: 11px 0;
+        }
+        &__privacy{
+            text-align: left;
+            padding: 0 7% 0 0;
             margin: 11px 0;
             border-right: 1px solid #525252;
         }
-        &__privacy{
-            float: right;
-            width: 33.3%;
-            left: 0;
-            padding: 0;
-            margin: 11px 0;
-        }
         &__terms{
-            float: right;
-            width: 33.3%;
-            right: 0;
-            padding: 0;
+            padding: 0 7% 0 5%;
             margin: 11px 0;
             border-right: 1px solid #525252;
         }
     }
 }
 @media only screen and (max-width: 715px){
-    .page .content-bottom{
-        height: 160px;
+    .content-bottom{
+        height: 205px;
     }
-    .page .footer-social__item{
+    .footer-social__item{
         margin-right: 17%;
     }
 }
 @media only screen and (max-width: 540px){
-    .page .content-bottom{
-        height: 140px;
+    .content-bottom{
+        height: 170px;
     }
-    .page .footer-social__item{
+    .footer-social__item{
         margin-right: 15%;
     }
 }
 @media only screen and (max-width: 460px){
-    .page .content-bottom{
-        height: 120px;
+    .content-bottom{
+        height: 115px;
     }
-    .page .footer-social__item{
+    .footer-social__item{
         margin-right: 13.5%;
     }
 }
 @media only screen and (max-width: 384px){
-    .page .footer-social__item{
+    .footer-social__item{
         margin-right: 11%;
     }
 }
