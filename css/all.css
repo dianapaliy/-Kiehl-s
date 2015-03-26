@@ -437,6 +437,10 @@ input {
   padding: 0 78px;
   margin: 0 auto;
 }
+.placeholder {
+  color: #ccc;
+  font-size: 0.6875em;
+}
 html,
 body {
   height: 100%;
@@ -618,6 +622,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 13px;
+  color: #ccc;
 }
 .page-header__search img {
   position: absolute;
@@ -1119,6 +1124,7 @@ body {
   border: 1px solid #ccc;
   position: relative;
   display: block;
+  color: #ccc;
 }
 .footer-signup__btn {
   position: absolute;
@@ -1203,11 +1209,6 @@ body {
   }
 }
 @media only screen and (max-width: 1120px) {
-  .content-mission__money {
-    width: 84.58083832%;
-  }
-}
-@media only screen and (max-width: 1107px) {
   .nav__item {
     margin-right: 5.9%;
   }
@@ -1222,6 +1223,9 @@ body {
   }
   .footer-signup p {
     font-size: 0.6em;
+  }
+  .footer__item {
+    margin-right: 3%;
   }
   .footer__item_hair-more {
     margin-right: 4%;
@@ -1238,7 +1242,7 @@ body {
     padding: 8px 1.05152471% 0 1.05152471%;
   }
   .nav-bottom__item {
-    padding-right: 3.4%;
+    padding-right: 3.1%;
   }
   .nav-bottom__item:last-child {
     padding-right: 0;
@@ -1582,7 +1586,7 @@ body {
   .content-mission__money {
     color: #e71c25;
     *zoom: 1;
-    max-width: 536px;
+    max-width: 538px;
     margin: 0 auto;
     position: relative;
     font-weight: bold;
@@ -1622,7 +1626,7 @@ body {
     top: 3px;
   }
   .content-mission__money-pt {
-    padding: 0 10px;
+    padding: 0 9px;
     font-size: 3em;
   }
   .content-mission__img {
@@ -1754,7 +1758,7 @@ body {
     width: 33.3%;
     float: left;
     margin-right: 0;
-    min-height: 173px;
+    min-height: 175px;
   }
   .footer__item ul li {
     font-size: 0.625em;
@@ -1768,7 +1772,7 @@ body {
     font-weight: bold;
   }
   .footer__item ul li:last-child {
-    padding: 0 0 26px 0;
+    padding: 0;
   }
   .footer__item_hair-more {
     float: left;
@@ -1838,7 +1842,7 @@ body {
     font-size: 0.7em;
   }
   .footer-signup__input {
-    width: 98%;
+    width: 88%;
   }
   .footer-signup__btn {
     right: 14.78%;
@@ -2482,7 +2486,7 @@ body {
     float: left;
     font-size: 0.75em;
     font-weight: normal;
-    padding: 11px 0 10px 12px;
+    padding: 9px 0 10px 12px;
   }
   .nav-bottom {
     background: #000;
@@ -2530,14 +2534,13 @@ body {
   }
   .nav-bottom__list {
     padding: 0;
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
   }
   .nav-bottom__item {
     float: none;
     display: inline-block;
     text-align: center;
-    font-size: 1em;
   }
   .nav-bottom__item:first-child {
     display: block;
@@ -2561,27 +2564,27 @@ body {
   }
   .nav-bottom__global {
     text-align: right;
-    padding: 0 0 0 4.5%;
+    padding: 0 0 0 11px;
     margin: 11px 0;
   }
   .nav-bottom__privacy {
     text-align: left;
-    padding: 0 7% 0 0;
+    padding: 0 11px 0 0;
     margin: 11px 0;
     border-right: 1px solid #525252;
   }
   .nav-bottom__terms {
-    padding: 0 7% 0 5%;
+    padding: 0 8px 0 8px;
     margin: 11px 0;
     border-right: 1px solid #525252;
   }
 }
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 730px) {
   .content-bottom {
     height: 205px;
   }
   .footer-social__item {
-    margin-right: 17%;
+    margin-right: 16%;
   }
 }
 @media only screen and (max-width: 540px) {
