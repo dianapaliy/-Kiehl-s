@@ -515,6 +515,9 @@ body {
   font-weight: bold;
   font-size: 0.75em;
 }
+.header_mobile {
+  display: none;
+}
 .header-nav {
   float: right;
 }
@@ -555,9 +558,6 @@ body {
   height: 11px;
   top: 10px;
   left: 4px;
-}
-.header_mobile {
-  display: none;
 }
 .page {
   background: #fff;
@@ -1799,7 +1799,7 @@ body {
   .footer-connect {
     width: 34.30232558%;
     float: left;
-    margin: 17px 0 0;
+    margin: 19px 0 0;
     border-right: 1px solid #b2b2b2;
   }
   .footer-connect__item {
@@ -1834,7 +1834,7 @@ body {
     width: 38.6627907%;
     box-sizing: border-box;
     padding: 0 4.94186047%;
-    margin-top: 21px;
+    margin-top: 23px;
     bottom: 0;
     float: left;
   }
@@ -1852,7 +1852,7 @@ body {
     width: 27.03488372%;
     height: 100px;
     padding: 0 4.94186047%;
-    margin-top: 21px;
+    margin-top: 23px;
     margin-bottom: 20px;
     box-sizing: border-box;
     border-left: 1px solid #b2b2b2;
@@ -2008,13 +2008,12 @@ body {
     display: block;
     background: #fff;
     margin-bottom: 26px;
-    margin-top: 21px;
   }
   .header_mobile .menu {
     height: 56px;
     *zoom: 1;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
   }
   .header_mobile .menu:before,
   .header_mobile .menu:after {
