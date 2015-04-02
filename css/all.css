@@ -671,7 +671,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   float: left;
-  margin-right: 6.65%;
+  margin-right: 6.5%;
 }
 .nav__item_gifts {
   font-size: 0.875em;
@@ -794,7 +794,7 @@ body {
   color: #000;
   font-size: 0.9375em;
   font-family: Helvetica, Arial;
-  font-weight: normal;
+  font-weight: bold;
   padding: 23px 0 19px;
   line-height: 1.4em;
 }
@@ -836,7 +836,7 @@ body {
   color: #000;
   font-size: 0.9375em;
   font-family: Helvetica, Arial;
-  font-weight: normal;
+  font-weight: bold;
   padding: 26px 0 20px;
   line-height: 1.4em;
 }
@@ -910,7 +910,7 @@ body {
   color: #000;
   font-size: 0.9375em;
   font-family: Helvetica, Arial;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.35em;
 }
 .content-events__text span {
@@ -1011,7 +1011,7 @@ body {
 }
 .footer__item {
   float: left;
-  margin-right: 3.5483871%;
+  margin-right: 3.3%;
 }
 .footer__item ul li {
   font-size: 0.625em;
@@ -1031,16 +1031,16 @@ body {
   padding: 0 0 23px 0;
 }
 .footer__item_men {
-  margin-right: 3.8%;
+  margin-right: 3.4%;
 }
 .footer__item_body {
-  margin-right: 4.2%;
+  margin-right: 3.8%;
 }
 .footer__item_tablet {
   display: none;
 }
 .footer__item_hair-more {
-  margin-right: 5%;
+  margin-right: 4%;
   padding-bottom: 10px;
 }
 .footer-connect {
@@ -1210,7 +1210,7 @@ body {
 }
 @media only screen and (max-width: 1120px) {
   .nav__item {
-    margin-right: 5.9%;
+    margin-right: 5.8%;
   }
   .nav-bottom__item {
     padding-right: 4.5%;
@@ -1462,7 +1462,7 @@ body {
     clear: both;
   }
   .nav__item {
-    margin-right: 12.7%;
+    margin-right: 12.5%;
   }
   .nav__item_hair {
     margin-right: 12.1%;
@@ -1941,7 +1941,7 @@ body {
 }
 @media only screen and (max-width: 982px) {
   .nav__item {
-    margin-right: 10.7%;
+    margin-right: 10.3%;
   }
   .nav__item_hair {
     margin-right: 10.1%;
@@ -1963,7 +1963,7 @@ body {
 }
 @media only screen and (max-width: 830px) {
   .nav-bottom__item {
-    padding-right: 5.8%;
+    padding-right: 5.6%;
   }
   .nav-bottom__global {
     padding-right: 0;
@@ -2011,6 +2011,7 @@ body {
   }
   .header_mobile .menu {
     height: 56px;
+    overflow: hidden;
     *zoom: 1;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
@@ -2042,6 +2043,11 @@ body {
   }
   .header_mobile .menu__item:last-child {
     border-right: 0;
+  }
+  .header_mobile .menu__item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
   .header_mobile .menu__item-logo {
     width: 31.25%;
@@ -2602,12 +2608,12 @@ body {
     height: 115px;
   }
   .footer-social__item {
-    margin-right: 13.5%;
+    margin-right: 13%;
   }
 }
 @media only screen and (max-width: 384px) {
   .footer-social__item {
-    margin-right: 11%;
+    margin-right: 10%;
   }
 }
 /*# sourceMappingURL=css/all.css.map */
